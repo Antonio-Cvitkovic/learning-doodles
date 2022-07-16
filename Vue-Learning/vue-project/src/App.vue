@@ -3,10 +3,13 @@ import { ref, computed } from 'vue'
 import Home from './components/Home.vue'
 import About from './components/About.vue'
 import Contact from './components/Contact.vue'
+import News from './components/News.vue'
 
 const routes = {
   '/': Home,
-  '/about': About
+  '/about': About,
+  '/contact': Contact,
+  '/news': News
 }
 
 const currentPath = ref(window.location.hash)
@@ -27,7 +30,8 @@ const currentView = computed(() => {
     <br>
   <button onclick="location.href='#/'">Home </button>
   <button onclick="location.href='#/about'">About</button>
-  <button onclick="location.href='#/contact'">Contact</button>
+    <button onclick="location.href='#/contact'">Contact</button>
+    <button onclick="location.href='#/news'">News</button>
   <component :is="currentView" />
   </nav>
 

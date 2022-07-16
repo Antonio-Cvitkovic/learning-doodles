@@ -1,18 +1,12 @@
 <template>
-
-  <body>
-
-<h1> &nbsp Welcome to the Home website! <br>
-  &nbsp Here we'll explain certain ideas of this practice.</h1>
-
-
-  </body>
+<body>
+Yo whaddup
+</body>
 </template>
-
 
 <script>
 export default {
-  name: "Home"
+  name: "News"
 }
 </script>
 
@@ -24,7 +18,4 @@ body {
   margin: 0%;
   color: white;
 }
-
-
-
 </style>
